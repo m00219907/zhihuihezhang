@@ -17,6 +17,6 @@ public class Constant {
 
     public static final String SHAREPREFERENCE_FILENAME = "zhihuihezhng2017";// sharepreference
 
-    public static  String BaseAddr = "http://ir.jsycloud.com/app/";
+    public static  String BaseAddr = "http://jiaxing.zhihuihezhang.com/m/";
     public static String appFolder =  Environment.getExternalStorageDirectory().getPath() + "/zhihuihezhang";
 }

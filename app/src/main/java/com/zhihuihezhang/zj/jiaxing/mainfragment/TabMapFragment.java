@@ -34,13 +34,14 @@ public class TabMapFragment extends Fragment implements CommonWebView.Iloadfaile
             @Override
             public void onClick(View v) {
                 map_webview.setVisibility(View.VISIBLE);
-                map_webview.loadUrl(Constant.BaseAddr + "pages/map.php" + "?uid=0");
+                map_webview.loadUrl(Constant.BaseAddr + "index.php");
                 map_load_failed.setVisibility(View.GONE);
             }
         });
 
         map_webview = (CommonWebView)view.findViewById(R.id.map_webview);
         map_webview.init(activity);
+        map_webview.loadUrl(Constant.BaseAddr + "index.php");
         return view;
     }
 

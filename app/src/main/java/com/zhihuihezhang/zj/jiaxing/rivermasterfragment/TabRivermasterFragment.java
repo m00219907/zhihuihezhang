@@ -113,7 +113,7 @@ public class TabRivermasterFragment  extends Fragment implements View.OnClickLis
             case R.id.river_fragment_remind://提醒
                 if (Constant.isLogin) {
                     Intent intent2 = new Intent(activity, WebviewActivity.class);
-                    intent2.putExtra("url", Constant.BaseAddr + "pages/remind.php");
+                    intent2.putExtra("url", Constant.BaseAddr + "work_remind.php");
                     startActivity(intent2);
                 } else {
                     startLoginActivity();
@@ -121,7 +121,7 @@ public class TabRivermasterFragment  extends Fragment implements View.OnClickLis
                 break;
             case R.id.river_fragment_notice://治水办通知
                 Intent intent3 = new Intent(activity, WebviewActivity.class);
-                intent3.putExtra("url", Constant.BaseAddr + "pages/notify.php");
+                intent3.putExtra("url", Constant.BaseAddr + "work_notify.php");
                 startActivity(intent3);
                 break;
             case R.id.river_fragment_helper://交办
@@ -136,7 +136,7 @@ public class TabRivermasterFragment  extends Fragment implements View.OnClickLis
             case R.id.river_fragment_check_river://巡河
                 if (Constant.isLogin) {
                     Intent intent6 = new Intent(activity, WebviewActivity.class);
-                    intent6.putExtra("url", Constant.BaseAddr + "pages/patrol.php");
+                    intent6.putExtra("url", Constant.BaseAddr + "work_patrol.php");
                     startActivity(intent6);
                 } else {
                     startLoginActivity();
@@ -145,7 +145,7 @@ public class TabRivermasterFragment  extends Fragment implements View.OnClickLis
             case R.id.river_fragment_history://巡河记录
                 if (Constant.isLogin) {
                     Intent intent6 = new Intent(activity, WebviewActivity.class);
-                    intent6.putExtra("url", Constant.BaseAddr + "pages/patrol.php");
+                    intent6.putExtra("url", Constant.BaseAddr + "work_patrol_log.php");
                     startActivity(intent6);
                 } else {
                     startLoginActivity();
@@ -154,7 +154,7 @@ public class TabRivermasterFragment  extends Fragment implements View.OnClickLis
             case R.id.river_fragment_entrust://委托巡河
                 if (Constant.isLogin) {
                     Intent intent6 = new Intent(activity, WebviewActivity.class);
-                    intent6.putExtra("url", Constant.BaseAddr + "pages/patrol.php");
+                    intent6.putExtra("url", Constant.BaseAddr + "work_entrust.php");
                     startActivity(intent6);
                 } else {
                     startLoginActivity();

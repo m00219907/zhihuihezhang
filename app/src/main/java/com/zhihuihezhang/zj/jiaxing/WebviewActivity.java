@@ -28,6 +28,7 @@ public class WebviewActivity extends Activity implements CommonWebView.Iloadfail
         });
 
         map_webview = (CommonWebView)findViewById(R.id.map_webview);
+        map_webview.loadUrl(url);
         map_webview.init(this);
     }
 
