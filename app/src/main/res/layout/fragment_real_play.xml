@@ -1,0 +1,162 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#2196f3">
+
+        <ImageView
+            android:id="@+id/real_play_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/back_img"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="实时监控"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <SurfaceView
+            android:id="@+id/real_play_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#50000000">
+
+            <ImageView
+                android:id="@+id/real_play_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/real_play_play"/>
+
+            <ImageView
+                android:id="@+id/real_play_fullscreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/real_play_fullscreen"/>
+
+            <TextView
+                android:id="@+id/real_play_resolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/real_play_fullscreen"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:text="高清"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/real_play_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/real_play_circle"/>
+
+        <ImageView
+            android:id="@+id/real_play_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/real_play_record"/>
+
+        <ImageView
+            android:id="@+id/real_play_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/real_play_record"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:src="@drawable/real_play_up"/>
+
+        <ImageView
+            android:id="@+id/real_play_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/real_play_record"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:src="@drawable/real_play_down"/>
+
+        <ImageView
+            android:id="@+id/real_play_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/real_play_record"
+            android:layout_centerVertical="true"
+            android:padding="25dp"
+            android:src="@drawable/real_play_left"/>
+
+        <ImageView
+            android:id="@+id/real_play_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/real_play_record"
+            android:layout_centerVertical="true"
+            android:padding="25dp"
+            android:src="@drawable/real_play_right"/>
+
+        <ImageView
+            android:id="@+id/real_play_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/real_play_video"/>
+
+        <ImageView
+            android:id="@+id/real_play_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@drawable/real_play_capture"/>
+
+        <ImageView
+            android:id="@+id/real_play_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:src="@drawable/real_play_decrease"/>
+
+        <ImageView
+            android:id="@+id/real_play_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:src="@drawable/real_play_increase"/>
+    </RelativeLayout>
+
+</LinearLayout>
