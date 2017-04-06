@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="default_ui_bg" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

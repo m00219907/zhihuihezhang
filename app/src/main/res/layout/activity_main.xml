@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4">
+    android:fitsSystemWindows="true"
+    android:background="#66bb6a">
 
     <RelativeLayout
         android:id="@+id/main_toplayout"
@@ -37,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:orientation="horizontal"
-        android:layout_below="@id/main_toplayout">
+        android:layout_below="@id/main_toplayout"
+        android:background="@color/white">
 
         <RelativeLayout
             android:id="@+id/main_map_layout"
@@ -114,7 +116,7 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:background="#fcfcfc" >
+        android:background="@color/white">
 
         <LinearLayout
             android:id="@+id/tab_home_layout"
@@ -233,6 +235,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/mainlayoutdivideline"
-        android:layout_below="@id/main_secondlayout"/>
+        android:layout_below="@id/main_secondlayout"
+        android:background="@color/white"/>
 
 </RelativeLayout>
