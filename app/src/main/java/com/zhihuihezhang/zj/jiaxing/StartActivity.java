@@ -50,11 +50,11 @@ public class StartActivity extends Activity{
         @Override
         protected Integer doInBackground(Void... arg0) {
             Login_Info_t loginInfo = new Login_Info_t();
-            loginInfo.szIp = "122.225.61.100".getBytes();
-            String strPort = "8001";
+            loginInfo.szIp = "101.68.222.50".getBytes();
+            String strPort = "9000";
             loginInfo.nPort = Integer.parseInt(strPort);
-            loginInfo.szUsername = "iriver".getBytes();
-            loginInfo.szPassword = "ir123456".getBytes();
+            loginInfo.szUsername = "zhhz_zjjx".getBytes();
+            loginInfo.szPassword = "zhhz123456".getBytes();
             loginInfo.nProtocol = 2;
             return IDpsdkCore.DPSDK_Login(mAPP.getDpsdkCreatHandle(), loginInfo, 30000);
         }

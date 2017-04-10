@@ -101,7 +101,7 @@ public class GroupListActivity extends Activity implements PullDownListView.OnRe
     }
     
     private void findViews() {
-        layLogout= (LinearLayout)findViewById(R.id.title_lay);
+        //layLogout= (LinearLayout)findViewById(R.id.title_lay);
     }
 
     private void setListener() {

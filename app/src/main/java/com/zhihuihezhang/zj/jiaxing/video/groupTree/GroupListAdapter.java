@@ -40,7 +40,7 @@ public class GroupListAdapter extends BaseAdapter {
         if (node.getType() == 3) {
             TreeNode tempNode = node;
             while (tempNode.getParent() != null) {
-                if (tempNode.getParent().getText().equals("区建设")) {
+                if (tempNode.getParent().getText().equals("临时")) {
                     alls.add(node);
                     break;
                 }

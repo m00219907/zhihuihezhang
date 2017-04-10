@@ -6,75 +6,11 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-        <LinearLayout
-            android:id="@+id/title_lay"
-            android:layout_width="match_parent"
-            android:layout_height="45dp">
-
-            <TextView
-                android:id="@+id/tab_guangdian"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="#45c01a"
-                android:textSize="18sp"
-                android:text="广电" />
-
-            <TextView
-                android:id="@+id/tab_yidong"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="#9a9a9a"
-                android:textSize="18sp"
-                android:text="移动" />
-
-            <TextView
-                android:id="@+id/tab_xiangzhen"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="#9a9a9a"
-                android:textSize="18sp"
-                android:text="乡镇自建" />
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:background="#9a9a9a" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ListView
-                android:id="@+id/list_guangdian"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:cacheColorHint="#00000000"
-                android:divider="@null"
-                android:dividerHeight="0dp"/>
-
-            <ListView
-                android:id="@+id/list_yidong"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:cacheColorHint="#00000000"
-                android:divider="@null"
-                android:dividerHeight="0dp"
-                android:visibility="gone"/>
-
-            <ListView
-                android:id="@+id/list_xiangzhen"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:cacheColorHint="#00000000"
-                android:divider="@null"
-                android:dividerHeight="0dp"
-                android:visibility="gone"/>
-        </RelativeLayout>
+    <ListView
+        android:id="@+id/list_guangdian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
 </LinearLayout>
